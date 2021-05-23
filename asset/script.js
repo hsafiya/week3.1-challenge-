@@ -1,16 +1,13 @@
 // Assignment code here
 
 //Variables
-var passwordLength;
-var confirmLower;
-var confirmUpper;
-var confirmNumber;
-var confirmSpecial;
-var userChoices;
-//Assignin var
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-var 
-//var upper
+
+var confirmLower = 'abcdefghijklmnopqrstuvwxyz';
+var confirmUpper = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+var confirmNumber = '123456789'
+var confirmSpecial = ' !#$%&()*+,-./<=>?@[\]^_`{|}~'
+
+
 
 
 // Get references to the #generate element
