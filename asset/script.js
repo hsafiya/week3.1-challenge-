@@ -37,7 +37,22 @@ function randomNumber() {
     return value;
 };
 
+ //prompt to identify how long password will be
+var findPassLenght = function() {
+    var passLenght = prompt ("How many charecters do you want your password to contain?");
+    if (typeof (parseInt(passLenght)) !=='number' || passLenght<= 8 || passLenght >=128 || !passLenght) {
+        alert("Please enter valid number")
+        return findPassLenght();
+    }
+    return passLenght;
+};
 
+//creating conditions for password:
+var passConditions = function(){
+    //creating  empty array
+    var passArray = [];
+    
+}
 
 
 // Get references to the #generate element
