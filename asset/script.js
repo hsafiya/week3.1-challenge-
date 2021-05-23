@@ -87,33 +87,31 @@ while (passArray.lenght === 0){
         else{
         };
 
+    //check to see if there is any item inserted 
+    if(passArray.lenght ===0) {
+        alert("I'm sorry, you need to type at least 1 character to generate the password, please try again");
+    }
+    else{
+        return passArray;
+    }
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
+
+//generate password function
+function generatePassword() {
+    var specLenght = findPassLenght();
+    passArray = passConditions();
+    password = "";
+
+    //ensur at least one type of character is in the password
+    for ( var i = 0; i< passArray.lenght; i ++) {
+        var passChar = passArray[i]();
+        password = password + passChar
+    }
+    
+}
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
