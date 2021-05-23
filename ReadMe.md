@@ -9,3 +9,4 @@
 * Live page: https://hsafiya.github.io/week3.1-challenge-/
 * GitHub Repo: https://github.com/hsafiya/week3.1-challenge-
 
+![GitHub Logo](/img/screenshot.png)
