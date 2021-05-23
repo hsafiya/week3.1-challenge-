@@ -20,7 +20,7 @@ function randomSymbol() {
 };
 
 //generates random number
-function randomNumber() {
+function randomNumberChar() {
     var value = confirmNumber[randomNumber(0, (confirmNumber.lenght)-1)];
     return value;
 };
@@ -82,11 +82,11 @@ while (passArray.lenght === 0){
     var numb = confirm("Would you like your password to contain numbers?")
     if (numb === true){
         //adds the random function
-        passArray.push(randomNumber);
+        passArray.push(randomNumberChar);
     }
         else{
         };
-        
+
     
     
 
