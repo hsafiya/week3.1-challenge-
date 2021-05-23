@@ -26,13 +26,13 @@ function randomNumber() {
 };
 
 //generates random uppercase
-function randomNumber() {
+function randomUpper() {
     var value = confirmUpper[randomNumber(0, (confirmUpper.length)-1)];
     return value;
 };
 
 //generates random lowercase
-function randomNumber() {
+function randomLower() {
     var value = confirmLower[randomNumber(0,(confirm.length)-1)];
     return value;
 };
@@ -47,6 +47,7 @@ var findPassLenght = function() {
     return passLenght;
 };
 
+
 //creating conditions for password:
 var passConditions = function(){
     //creating  empty array
@@ -54,6 +55,65 @@ var passConditions = function(){
     
 }
 
+while (passArray.lenght === 0){
+    var lowerCase = confirm ("Would you like your password to contain lowercase characters?");
+    if (lowerCase === true) {
+        //adds the random function
+        passArray.push(randomLower);
+    } else{
+    };
+
+    var upperCase = confirm ("Would you like your password to contain uppercase characters?")
+    if (upperCase === true){
+        // adds the random function
+        passArray.push(randomUpper);
+    } else{
+
+    };
+
+    var specChar = confirm("Would you like your password to contain special charatcter?")
+    if (specChar === true){
+        //adds the random function
+        passArray.push(randomSymbol);
+       }
+       else{
+    };
+
+    var numb = confirm("Would you like your password to contain numbers?")
+    if (numb === true){
+        //adds the random function
+        passArray.push(randomNumber);
+    }
+        else{
+        };
+        
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
